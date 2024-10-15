@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cadastro de Funcionários</title>
+</head>
+<body>
+
+    <h1>Cadastro de Funcionários</h1>
+    
+    <form id="employeeForm" style="display: none;">
+        <input type="text" id="name" name="name" placeholder="Nome" required>
+        <input type="text" id="rg" name="rg" placeholder="RG" required>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+        <input type="text" id="address" name="address" placeholder="Endereço" required>
+        <input type="text" id="nickname" name="nickname" placeholder="Apelido" required>
+        <input type="text" id="comment" name="comment" placeholder="Comentário" required>
+        <input type="file" name="photo" accept="image/*">
+        <button type="submit">Cadastrar Funcionário</button>
+    </form>
+    
+    <button id="showFormBtn">Cadastrar Funcionário</button>
+    
+    <div id="employeeList"></div>
+
+    <input type="password" id="deletePassword" placeholder="Digite a senha para excluir" style="display: none;">
+    
+    <script src="app.js"></script>
+</body>
+</html>

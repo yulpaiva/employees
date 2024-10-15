@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da lista de funcionários */
+#employeeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.employee-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px; /* Largura fixa para o card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.employee-card:hover {
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+.employee-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    #employeeList {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os cards */
+    }
+
+    .employee-card {
+        width: 90%; /* Largura total em telas pequenas */
+    }
+
+    form {
+        width: 90%; /* Largura total do formulário em telas pequenas */
+    }
+}
+
+@media (min-width: 769px) {
+    /* Largura do card em telas maiores */
+    .employee-card {
+        width: calc(33.33% - 20px); /* Três cards por linha */
+    }
+}
