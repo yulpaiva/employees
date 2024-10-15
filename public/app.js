@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('employeeForm');
     const showFormBtn = document.getElementById('showFormBtn');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
 
     // Evento para mostrar/ocultar o formulário
     showFormBtn.addEventListener('click', () => {
@@ -32,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Função para carregar funcionários
-    async function loadEmployees() {
+    async function loadEmployees(searchQuery = '') {
         const response = await fetch('/api/employees');
 
         if (!response.ok) {
@@ -45,7 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const employeeList = document.getElementById('employeeList');
         employeeList.innerHTML = ''; // Limpa a lista antes de adicionar novos funcionários
 
-        employees.forEach(employee => {
+        // Filtra os funcionários pelo nome, se houver uma pesquisa
+        const filteredEmployees = employees.filter(employee =>
+            employee.name.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+
+        filteredEmployees.forEach(employee => {
             const card = document.createElement('div');
             card.className = 'employee-card'; // Adiciona a classe para estilo
             card.innerHTML = `
@@ -69,11 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para lidar com a exclusão
     async function handleDelete(employeeName) {
-        // Solicita a senha ao usuário
         const password = prompt('Digite a senha para excluir o funcionário:');
-
-        // Verifica a senha
-        const correctPassword = '007'; // A senha correta
+        const correctPassword = '007';
 
         if (password !== correctPassword) {
             alert('Senha incorreta! Não foi possível excluir o funcionário.');
@@ -81,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const response = await fetch(`/api/employees/${employeeName}`, {
-            method: 'DELETE', // O método para deletar
+            method: 'DELETE',
         });
 
         if (!response.ok) {
@@ -91,8 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         alert('Funcionário excluído com sucesso!');
-        loadEmployees(); // Atualiza a lista de funcionários após a exclusão
+        loadEmployees();
     }
+
+    // Evento para o botão de pesquisa
+    searchBtn.addEventListener('click', () => {
+        const searchQuery = searchInput.value;
+        loadEmployees(searchQuery);
+    });
 
     loadEmployees(); // Carrega os funcionários ao iniciar
 });

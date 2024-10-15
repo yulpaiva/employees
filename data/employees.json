@@ -1,11 +1,65 @@
 [
   {
-    "name": "adasda",
-    "rg": "asdasd",
-    "cpf": "asdasda",
-    "address": "sdasdad",
-    "comment": "sdasdasd",
-    "nickname": "asdasda",
-    "photo": "/uploads/1729008166439.jpg"
+    "name": "ELAINE DOS SANTOS MACIEL",
+    "rg": "MG 18136090",
+    "cpf": "117.379.696-70",
+    "address": "RUA OURO PRETO, 119 MORRO DAS BICAS",
+    "comment": "REALIZA O TRAFICO DE DROGAS (LOCAL CONHECIDO POR BARRACÃO AMARELO)",
+    "nickname": "TRAFICO DE DROGAS/AGRESSÃO FÍSICA/AMEAÇA/RECEPTAÇÃO/2x POSSE DE ARMA DE FOGO.",
+    "photo": "/uploads/1729018928308.jpg"
+  },
+  {
+    "name": "SAMUEL CRISTIANO DOS SANTOS (SIRI - SIRIZINHO)",
+    "rg": "MG 21996908",
+    "cpf": "706.085.546-77",
+    "address": "RUA SANTOS 32 VÁRZEA DO SÍTIO  - RAPOSOS ",
+    "comment": ".",
+    "nickname": "TRÁFICO DE DROGAS, LESÃO CORPORAL, USO CONSUMO DE DROGAS, AMEAÇA, DIREÇÃO PERIGOSA, EMBRIAGUEZ AO VOLANTE.",
+    "photo": "/uploads/1729019012043.jpg"
+  },
+  {
+    "name": "ITALO GABRIEL ERNESTO (MENOR Rps)",
+    "rg": "MG 23618926",
+    "cpf": "171.307.176-29",
+    "address": "RUA SERGIPE, 696 VÁRZEA DO SÍTIO - RAPOSOS ",
+    "comment": "COMENTÁRIOS: INDIVÍDUO DEVE SER OBSERVADO",
+    "nickname": "TRAFICO DE DROGAS/USO DROGAS/AMEAÇA, INGRESSO ILEGAL CELULAR EM EST. PRISIONAL ",
+    "photo": "/uploads/1729019109004.jpg"
+  },
+  {
+    "name": "DANIEL FELIX DA SILVA MAGALHÃES",
+    "rg": "12477878",
+    "cpf": "013.774.386-60",
+    "address": "RUA JOÃO FLORENTINO, 290 SÃO JUDAS TADEU - RAPOSOS ",
+    "comment": ".",
+    "nickname": "TRÁFICO DE DROGAS, USO CONSUMO DE DROGAS, RECEPTAÇÃO, AMEAÇA, FURTO.",
+    "photo": "/uploads/1729019182689.jpg"
+  },
+  {
+    "name": "LEANDRO GABRIEL SANTOS",
+    "rg": "18791307 ",
+    "cpf": "12619259630",
+    "address": "RUA PARAGUAIA, 300 MORRO DAS BICAS - RAPOSOS ",
+    "comment": "REALIZA TRÁFICO DE DROGAS PRÓXIMO A RESIDÊNCIA.",
+    "nickname": "5x TRAFICO DE DROGAS, USO CONSUMO DE DROGAS, DESOBEDIÊNCIA, AGRESSÃO FÍSICA, AMEAÇA.",
+    "photo": "/uploads/1729019232522.jpg"
+  },
+  {
+    "name": "RAFAEL HENRIQUE LIMA DA SILVA",
+    "rg": "MG 20604662",
+    "cpf": "139.892.386-98",
+    "address": "RUA MARGEM DA LINHA, 1230 VILA BELA - RAPOSOS ",
+    "comment": "CONFIRMAR ENDEREÇO, A PRINCÍPIO NÃO MORA MAIS NO LOCAL.",
+    "nickname": "TRÁFICO DE DROGAS, AMEAÇA, FURTO, RECEPTAÇÃO, AGRESSÃO FÍSICA, DESOBEDIÊNCIA, ROUBO, DANO.",
+    "photo": "/uploads/1729019328112.jpg"
+  },
+  {
+    "name": "NILTON GERALDO ALEXANDRE (NENÉM )",
+    "rg": "MG: 3934832",
+    "cpf": "606.574.646-00",
+    "address": "RUA IPÊ, 5 SÃO JUDAS TADEU - RAPOSOS (ACESSO TAMBÉM PELA RUA JOÃO FLORENTINO, 278)",
+    "comment": "ATUALMENTE PRESO. OS TRÊS FILHOS TAMBÉM PRESOS.",
+    "nickname": "TRÁFICO DE DROGAS, 121 T, FURTO, PORTE ILEGAL DE ARMA DE FOGO, LESÃO CORPORAL, AGRESSÃO FÍSICA, AMEAÇA, DANO, ROUBO, VIOLÊNCIA DOMÉSTICA, DIFAMAÇÃO, ATO OBSCENO.",
+    "photo": "/uploads/1729019396333.jpg"
   }
 ]

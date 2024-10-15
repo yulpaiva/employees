@@ -18,10 +18,16 @@
         <input type="text" id="nickname" name="nickname" placeholder="Apelido" required>
         <input type="text" id="comment" name="comment" placeholder="Comentário" required>
         <input type="file" name="photo" accept="image/*">
-        <button type="submit">Cadastrar Funcionário</button>
+        <button type="submit">Cadastrar indivíduo</button>
     </form>
     
-    <button id="showFormBtn">Cadastrar Funcionário</button>
+    <button id="showFormBtn">Cadastrar indivíduo</button>
+
+    <!-- Campo de pesquisa abaixo do botão "Cadastrar indivíduo" -->
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Pesquisar por nome...">
+        <button id="searchBtn">Pesquisar</button>
+    </div>
     
     <div id="employeeList"></div>
 

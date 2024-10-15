@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: black;
     color: #333;
     line-height: 1.6;
 }
@@ -47,6 +47,7 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 20px; /* Aumenta o espaço ao redor do botão */
 }
 
 button:hover {
@@ -70,6 +71,7 @@ button:hover {
     width: 300px; /* Largura fixa para o card */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
 }
 
 .employee-card:hover {
@@ -77,9 +79,66 @@ button:hover {
 }
 
 .employee-card img {
-    max-width: 100%;
-    height: auto;
+    width: 450px; /* Aumenta a largura da imagem */
+    height: 450px; /* Aumenta a altura da imagem */
+    object-fit: cover; /* Garante que a imagem preencha a área definida sem distorcer */
+    border-radius: 10px; /* Adiciona cantos arredondados, opcional */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra à imagem, opcional */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.employee-card h3,
+.employee-card p {
+    margin-bottom: 10px;
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+/* Estilo do botão de excluir */
+.delete-button {
+    background: transparent; /* Fundo transparente */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: #ff0000; /* Cor do ícone de lixeira */
+    font-size: 24px; /* Tamanho do ícone */
+    margin-top: 10px; /* Espaçamento acima do botão */
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+    margin-left: auto; /* Centraliza o botão horizontalmente */
+    margin-right: auto; /* Centraliza o botão horizontalmente */
+}
+
+/* Estilo do container de pesquisa */
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+/* Estilo do campo de pesquisa */
+#searchInput {
+    width: 200px; /* Diminui o tamanho do campo */
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+/* Estilo do botão de pesquisa */
+#searchBtn {
+    margin-left: 10px; /* Espaçamento entre o campo e o botão */
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#searchBtn:hover {
+    background-color: #0056b3;
 }
 
 /* Media queries para responsividade */
